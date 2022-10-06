@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child perent realetion</title>
+    <style>
+        .a1{
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            position: relative;
+            overflow-y: hidden;
+        }
+        .o{
+            width: 150px;
+            height: 150px;
+            position:absolute;
+        }
+        .p{
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+
+        }
+        .g{
+            border-bottom-left-radius: 150px;
+            border-top-right-radius: 150px;
+
+        }
+        .g:hover{
+            background-color: hotpink;
+        }
+        .a1:hover{
+            background-color:grey;
+        }
+        #a2{
+            background-color: blue;
+            right: 0px;
+            top: 0px;
+        }
+        [data-a3="a3"]{
+            background-color: crimson;
+            top: 0px;
+            left: 0px;
+        }
+        .a4{
+            background-color:green;
+            bottom: 0px;
+            right: 0px;
+        
+        }
+        #a5{
+            background-color: chocolate;
+            bottom: 0px;
+            left: 0px;
+        }
+        [data-a6="a6"]{
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            left: 150px;
+            top: 150px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1 ">
+        <div id="a2" class="o p"> </div>
+        <div data-a3="a3" class="o g"></div>
+        <div class="a4 o g" ></div>
+        <div id="a5" class="o p"></div>
+        <div data-a6="a6" class=""></div>
+    </div>
+
+</body>
+</html>
